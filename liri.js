@@ -24,7 +24,7 @@ var doWhat = 'Do-What';
 
 //prompt start
 
-prompt.message = colors.magenta("Type one of the following: tweets, spotify-this-song, movie, or Do-What");
+prompt.message = colors.rainbow("Type one of the following: tweets, spotify-this-song, movie, or Do-What");
 prompt.delimiter = colors.magenta("\n");
 
 prompt.start();
