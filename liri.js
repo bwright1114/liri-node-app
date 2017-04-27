@@ -44,7 +44,6 @@ prompt.get({
 		myTwitter();
 	} 
 	//if the user enters spotify-this-song it will ask for the song you want to look, run the mySpotify function based on those results. If the user doesnt enter a song it defaults to "I Believe I Can Fly". 
-	
 	else if(userInput == songs){
 		prompt.get({
 			properties: {
@@ -169,8 +168,8 @@ function mySpotify(userSelection){
 				});
 		    	}
 		    }
-	});
-}
+		});
+}	
 
 //movie omdb (Hardest Part to get to work..smh!)
 function myMovies(type){
@@ -237,8 +236,8 @@ function myMovies(type){
 var lastOption = function(last){
 	//reads the information from the random.txt file 
 	fs.readFile('random.txt', 'utf-8', function(err, data){
-		//split the data by the comma so you can access the first part which is which type of search we are doing and the second part which is the userSelection of what we are looking up
-		var what = data.split(',');
+	//split the data by the comma so you can access the first part which is which type of search we are doing and the second part which is the userSelection of what we are looking up
+	var what = data.split(',');
 		//pass this information into the spotify function. 
 		if(what[0] === songs){
 			userSelection = what[1];
